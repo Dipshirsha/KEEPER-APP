@@ -1,0 +1,102 @@
+/* Note.css */
+.note {
+    background: #2d2d2d; /* Dark background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .note:hover {
+    transform: translateY(-5px); /* Lift the note on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+  }
+  
+  .note-content {
+    color: #ffffff; /* White text */
+  }
+  
+  .note-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #bd96e7; /* Purple title */
+  }
+  
+  .note-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #e0e0e0; /* Light gray text */
+  }
+  
+  .delete-button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Red gradient */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .delete-button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .delete-button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+  }
+  
+  /* Keyframes for fadeIn animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  /* Add these styles to Note.css */
+
+.footer {
+    background: #1e1e1e; /* Dark background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    border-top: 2px solid #6a11cb; /* Purple border on top */
+    animation: slideInUp 0.5s ease-out;
+  }
+  
+  .footer-text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e0e0e0; /* Light gray text */
+    transition: color 0.3s ease;
+  }
+  
+  .footer:hover .footer-text {
+    color: #6a11cb; /* Change text color to purple on hover */
+  }
+  
+  /* Keyframes for slideInUp animation */
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
